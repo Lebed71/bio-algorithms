@@ -1,4 +1,4 @@
-function patternConcurrencyCount(inputString = '', patternString = '') {
+const patternConcurrencyCount = (inputString = '', patternString = '') => {
     if (!inputString.length || !patternString.length) return 0;
 
     let total = 0;
@@ -9,7 +9,7 @@ function patternConcurrencyCount(inputString = '', patternString = '') {
     }
 
     return total;
-}
+};
 
 const fs = require('fs');
 const lineReader = require('readline').createInterface({
@@ -31,4 +31,6 @@ lineReader.on('line', (line) => {
         });
     }
 });
+
+module.exports = patternConcurrencyCount;
 
