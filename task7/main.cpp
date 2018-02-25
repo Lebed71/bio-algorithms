@@ -52,6 +52,7 @@ int main()
     file >> M;
     std::string inputString;
     file >> inputString;
+    file.close();
 
     std::cout << "INPUT: " << M << std::endl;
     std::cout << "INPUT: " << inputString << std::endl;
@@ -61,7 +62,6 @@ int main()
     const unsigned long result = DPChange(M, separateInputString);
     std::cout << "OUTPUT: " << result << std::endl;
 
-    file.close();
     std::ofstream fout;
     fout.open("output.txt");
     fout << result;
