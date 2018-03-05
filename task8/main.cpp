@@ -3,7 +3,7 @@
 #include <vector>
 
 const unsigned long ManhattanTourist(const std::vector<std::vector<unsigned long>>& south,
-                                     const std::vector< std::vector<unsigned long>>& eath,
+                                     const std::vector<std::vector<unsigned long>>& eath,
                                      const unsigned long& n,
                                      const unsigned long& m) {
     std::vector<std::vector<unsigned long>> result(n + 1);
@@ -42,8 +42,8 @@ int main() {
     file >> n;
     file >> m;
 
-    std::vector< std::vector<unsigned long> > south(n);
-    std::vector< std::vector<unsigned long> > eath(m + 1);
+    std::vector<std::vector<unsigned long>> south(n);
+    std::vector<std::vector<unsigned long>> eath(m + 1);
 
     for (int i(0); i < n; i++) {
         south[i].resize(m + 1);
